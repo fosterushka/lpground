@@ -1,0 +1,26 @@
+{
+  "name": "expressjs",
+  "version": "0.0.1",
+  "description": "My first express web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idevmans/lpground.git"
+  },
+  "keywords": [
+    "webapp",
+    "pwa"
+  ],
+  "author": "idevmans aka AydievMansur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idevmans/lpground/issues"
+  },
+  "homepage": "https://github.com/idevmans/lpground#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
