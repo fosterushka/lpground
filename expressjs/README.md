@@ -1,2 +1,3 @@
 npm i
-node app.js
+DEBUG=myapp:* npm start || npm start
+https://www.npmjs.com/package/pug
