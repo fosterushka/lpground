@@ -2,7 +2,14 @@
     "name": "ExpressJS PWA",
     "short_name": "ExpressJS PWA",
     "start_url": "/?home=true",
-    "icons": [],
+    "icons": [
+        {
+            "src":"/images/webmanifest/icons-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable any"
+        }
+    ],
     "theme_color": "#000",
     "background_color": "#fff",
     "display": "fullscreen",
