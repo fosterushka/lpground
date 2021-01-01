@@ -38,4 +38,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+//favico
+app.use('/favicon.ico', express.static('images/favicon.ico'));
+
 module.exports = app;
