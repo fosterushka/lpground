@@ -1,0 +1,10 @@
+{
+    "name": "ExpressJS PWA",
+    "short_name": "ExpressJS PWA",
+    "start_url": "/?home=true",
+    "icons": [],
+    "theme_color": "#000",
+    "background_color": "#fff",
+    "display": "fullscreen",
+    "orientation": "portrait"
+}
