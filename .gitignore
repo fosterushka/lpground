@@ -1,3 +1,4 @@
-/expressjs/node_modules
+*/node_modules
 *:Zone.Identifier
 *.key
+.idea
