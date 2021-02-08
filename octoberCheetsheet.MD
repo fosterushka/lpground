@@ -43,3 +43,5 @@ route
 
 Route::get('/download-file/{name}', '\Wms\Crm\Classes\DownloadController@download');
 ```
+# Work with realtionships and rendering relation manager 
+https://octobercms.com/docs/backend/relations#extend-view-widget
