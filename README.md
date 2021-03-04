@@ -1,1 +1,1 @@
-### At this repository i just trying something new, exploring new programming langauge or tools for em !
+### In this repository, i just tryin smth new, exploring new programming langauge or tools for em !

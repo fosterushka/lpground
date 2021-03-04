@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <div class="container pt-5" id="app">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1>{{ title }} : {{ counter }}</h1>
+            <div>
+                <button class="btn-primary" v-on:click="counter++">+</button>
+                <button class="btn-danger" v-on:click="counter = counter - 1">-</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/vue@3.0.7/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
