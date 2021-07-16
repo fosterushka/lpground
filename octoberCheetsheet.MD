@@ -48,3 +48,23 @@ https://octobercms.com/docs/backend/relations#extend-view-widget
 
 # Category for backend settings
 https://github.com/octobercms/october/blob/develop/modules/system/classes/SettingsManager.php
+
+# Merging config when you extend controller
+```
+Controller::extend(function($controller) {
+            if (!in_array('Backend.Behaviors.RelationController',$controller->implement)) {
+                $controller->implement[] = 'Backend.Behaviors.RelationController';
+            }
+            if (!isset($controller->relationConfig)) {
+                $controller->addDynamicProperty('relationConfig');
+            }
+            $myConfigPath = '$/vendor/plugin/controllers/nameController/config_relation.yaml';
+
+
+            $controller->relationConfig = $controller->mergeConfig(
+                $controller->relationConfig,
+                $myConfigPath
+            );
+
+        });
+```
