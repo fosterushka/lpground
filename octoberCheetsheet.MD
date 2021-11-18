@@ -68,3 +68,6 @@ Controller::extend(function($controller) {
 
         });
 ```
+
+# Plural declinsion for count words
+https://graker.ru/news/2018/01/21/octobercms-pluralize
