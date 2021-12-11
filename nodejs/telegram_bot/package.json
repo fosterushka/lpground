@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "node-binance-api": "^0.13.1",
+    "node-telegram-bot-api": "^0.56.0"
+  }
+}
