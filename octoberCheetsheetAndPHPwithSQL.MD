@@ -71,3 +71,19 @@ Controller::extend(function($controller) {
 
 # Plural declinsion for count words
 https://graker.ru/news/2018/01/21/octobercms-pluralize
+
+
+
+#sql radius for closest point
+```$lat = 41.118491 // user's latitude
+$lng = 25.404509 // user's longitude
+
+SELECT *, 
+( 6371 * acos( cos( radians($lat) ) 
+* cos( radians( latitude ) ) 
+* cos( radians( longitude ) - radians($lng) ) + sin( radians($lat) ) 
+* sin( radians( latitude ) ) ) ) 
+AS calculated_distance 
+FROM settings as T 
+HAVING calculated_distance <= (SELECT distance FROM settings WHERE sid=T.sid) 
+ORDER BY distance_calc```
