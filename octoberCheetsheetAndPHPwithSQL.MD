@@ -86,4 +86,19 @@ SELECT *,
 AS calculated_distance 
 FROM settings as T 
 HAVING calculated_distance <= (SELECT distance FROM settings WHERE sid=T.sid) 
-ORDER BY distance_calc```
+ORDER BY distance_calc
+```
+====
+
+#mockup image twig filer for october
+```
+public function mockupImage()
+    {
+        return [
+            'mockup_image' => function ($string) {
+                if(!empty($string)) return $string;
+                $settings = (new Settings)->getSettings();
+                return $settings->dummyPhoto->path ?? asset('themes/'.Theme::getActiveTheme()->getDirName().'/assets/src/img/noImage.jpg');
+            },
+        ];
+```
