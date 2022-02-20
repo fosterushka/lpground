@@ -1,16 +1,5 @@
-const TelegramBot = require('node-telegram-bot-api');
 require('dotenv').config();
-const telegram_token = process.config.TELEGRAM_API_KEY;
-
-const Binance = require('node-binance-api');
-const binance = new Binance().options({
-    APIKEY: process.config.BINANCE_API_KEY,
-    APISECRET: process.config.BINANCE_SECRET_KEY,
-    useServerTime: true,
-    adjustForTimeDifference: true
-});
-
-const bot = new TelegramBot(telegram_token, { polling: true });
+const bot = require('./modules/telegramApi');
 
 function checkUser(chatId) {
     return chatId == process.config.BINANCE_OWNER_ID;

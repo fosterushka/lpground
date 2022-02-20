@@ -2,3 +2,5 @@
 *:Zone.Identifier
 *.key
 .idea
+.vscodde
+.env
