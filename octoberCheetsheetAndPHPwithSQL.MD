@@ -102,3 +102,10 @@ public function mockupImage()
             },
         ];
 ```
+
+
+#BACKENDD CATEGORY
+```
+look at System\Classes\SettingsManager 
+there is const categories;
+```
