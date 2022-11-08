@@ -22,6 +22,4 @@ bot.on('message', async (msg) => {
     } else {
         bot.sendMessage(chatId, `Я не знаю вас 🧐 / I dunno who ure `);
     }
-
-
 });
