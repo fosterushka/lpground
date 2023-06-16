@@ -3,6 +3,6 @@ package main
 import "fmt"
 
 func main() {
-    
-    var n
+	fmt.Println("hello motherTrucker it's a classic")
 }
+`±`±±±±§±±

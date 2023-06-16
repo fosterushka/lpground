@@ -11,6 +11,7 @@ const binance = new binance_api().options({
 
 await binance.useServerTime();
 binance.balance((error, balances) => {
+    asdasdasdsa
     if ( error ) return console.error(error);
     Object.keys(balances).forEach(key => {
         const value = balances[key]

@@ -2,5 +2,8 @@
 *:Zone.Identifier
 *.key
 .idea
-.vscodde
+.vscode
 .env
+**/.DS_Store
+.idea
+**/.Zone.Identifier
